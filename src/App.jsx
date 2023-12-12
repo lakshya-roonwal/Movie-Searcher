@@ -8,8 +8,8 @@ import SingleMovie from "./components/SingleMovie";
 function App() {
   return (
     <div className="App">
-      <Nav />
       <BrowserRouter>
+      <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:id" element={<SingleMovie />} />

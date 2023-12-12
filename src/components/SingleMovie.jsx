@@ -22,7 +22,7 @@ export default function SingleMovie() {
   }, []);
 
   return (
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl min-h-screen flex items-center lg:py-16 lg:px-12">
       <div>
         <div>
           <div className="flex flex-col md:flex-row gap-4">
@@ -34,7 +34,7 @@ export default function SingleMovie() {
             <div>
             <span class="bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">IMDB {movie.imdbRating}</span>
             </div>
-              <h1 className="text-3xl font-bold dark:text-white">{movie.Title}</h1>
+              <h1 className="text-3xl font-bold ">{movie.Title}</h1>
               <div>
                 {movie.Genre !== undefined
                   ? movie.Genre.split(",").map((e) => {
